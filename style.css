@@ -1,0 +1,431 @@
+@charset "utf-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+html,body{
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    /*font-family: poynter-oldstyle-display, yu-mincho-pr6, "Noto Serif JP", 游明朝, YuMincho,
+    "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;*/
+    letter-spacing: 1;
+    background-color: #000;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.section-title {
+    font-size: 62px;
+}
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+    background-color: #000;
+    padding: 0 50px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 5;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+.header-left img {
+    width: 90px;
+}
+.header-right .navi {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+img .line-logo {
+    width: 30px;
+}
+.header-right .navi a {
+    position: relative;
+    color: #fff;
+}
+.navi li .line::after {
+    content: "";                
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;                   
+    height: 1px;                  
+    background-color: #d4af37;       
+    transition: width 0.3s ease;  
+}
+
+.navi li .line:hover::after {
+    width: 100%;                
+}
+/*-------------------------------------------
+mainvisual
+-------------------------------------------*/
+.mainvisual {
+    height: auto;      
+    width: 100vw;       
+    overflow: hidden; 
+    padding-top: 80px;  
+    line-height: 0;
+}
+.mainvisual img {
+    display: block;
+    height: 100vh;        
+    width: 100%;        
+    object-fit: cover;
+}
+/*-------------------------------------------
+sec01
+-------------------------------------------*/
+.sec01 {
+    padding: 50px 30px;
+    background-color: #111111;
+}
+.sec01 .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    /*background-color: bisque;*/
+}
+.sec01 .right img {
+    width: 450px;
+    padding: 50px 0;
+}
+.sec01 h1 {
+    font-family: poynter-oldstyle-display, yu-mincho-pr6, "Noto Serif JP", 游明朝, YuMincho,
+    "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    margin-bottom: 50px;
+    color: #d4af37; 
+    text-shadow: 
+    1px 1px 2px rgba(0,0,0,0.4), 
+    0 0 8px rgba(212,175,55,0.6); 
+    text-align: left;
+}
+.sec01 p {
+    font-family: poynter-oldstyle-display, yu-mincho-pr6, "Noto Serif JP", 游明朝, YuMincho,
+    "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: left;
+}
+/*-------------------------------------------
+sec02
+-------------------------------------------*/
+.sec02 {
+    font-family: poynter-oldstyle-display, yu-mincho-pr6, "Noto Serif JP", 游明朝, YuMincho,
+    "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    padding: 150px 30px;
+    background: url(image6.jpg) no-repeat center center / cover;
+}
+.sec02 .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.sec02 .container {
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+}
+.sec02 h1 {
+    margin-bottom: 50px;
+    color: #000;
+    font-family: poynter-oldstyle-display, yu-mincho-pr6, "Noto Serif JP", 游明朝, YuMincho,
+    "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+.sec02 .system {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.sec02 .price {
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+}
+.sec02 li {
+    font-size: 15px;
+    line-height: 1.3;
+}
+.sec02 .notice {
+    margin-top: 10px;
+}
+/*-------------------------------------------
+sec03
+-------------------------------------------*/
+.sec03 {
+    padding: 50px 30px 80px 30px;
+    background-color:#807150;
+    text-align: left;
+    font-family: poynter-oldstyle-display, yu-mincho-pr6, "Noto Serif JP", 游明朝, YuMincho,
+    "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+.sec03 .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.sec03 h1 {
+    color: #fff;
+    text-align: right;
+    margin-bottom: 40px;
+}
+.sec03 h3 {
+    color: #fff;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+.sec03 p {
+    color: #fff;
+    line-height: 1.3;
+}
+.sec03 .attention {
+    margin: 20px 0;
+}
+.sec03  iframe {
+    filter: grayscale(1);
+    margin-bottom: 90px;
+    width: 100%;
+}
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footer {
+    background-color: #111111;
+    text-align: center;
+    padding: 15px 0;
+}
+#footer a {
+    color: #fff;
+}
+#footer li {
+    font-size: 16px;
+}
+#footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 11px;
+    margin-bottom: 11px;
+}
+#footer p {
+    color: #fff;
+    font-size: 10px;
+}
+/*---------------------------------
+totop
+---------------------------------*/
+#totop {
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+    z-index: 1000;
+}
+  #totop .arrow {
+    position: relative; 
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#totop .arrow::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ECECEC;
+    border-radius: 50%;
+}
+#totop .arrow::after {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    border-right: solid 5px #333;
+    border-bottom: solid 5px #333;
+    transform: translate(-50%, -50%) rotate(-135deg);
+    transform-origin: center;
+}
+/*---------------------------------
+sp
+---------------------------------*/
+@media (max-width: 900px) {
+    .sec01 .wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .sec01 .wrapper .left,
+    .sec01 .wrapper .right  {
+        width: 100%;
+    }
+    .sec01 .right img {
+        width: 100%;
+    }
+}
+@media (max-width: 590px) {
+    #header {
+        padding: 10px 15px;
+    }
+    .header-left img {
+        width: 80px;
+    }
+    .header-right .navi a {
+        font-size: 13px;
+    }
+    .header-right .navi {
+        gap: 15px;
+    }
+    .section-title {
+        font-size: 42px;
+    }
+    .mainvisual {
+        padding-top: 100px;
+    }
+    .sec01 {
+        padding: 30px 10px;
+    }
+    .sec01 h1 {
+        text-shadow: none;
+    }
+    .sec01 p {
+        font-size: 15px;
+    }
+    .sec02 {
+        padding: 40px 10px;
+    }
+    .sec03 {
+        padding: 30px 10px;
+    }
+    .sec03 iframe {
+        margin-bottom: 50px;
+    }
+    #totop {
+        bottom: 20px;
+        right: 20px;
+    }
+}
